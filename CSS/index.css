@@ -4,9 +4,9 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
- }
- 
- body {
+}
+
+body {
     margin: 0px;
     min-height: 100%;
     width: 100%;
@@ -15,11 +15,69 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
- }
+}
 
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /*Embedded video*/
 .video-background{
     z-index: -1 !important;
     filter: blur(5px)
+}
+
+
+/* Home buttons */
+.gravityButton {
+    display: grid;
+    place-items: center;
+    width: 192px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.gravityButton > .gbAction {
+    font: inherit;
+    width: 64px;
+    aspect-ratio: 1;
+    background: none;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transform: translate(var(--tx, 0), var(--ty, 0));
+    opacity: var(--opacity, 0.25);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gravityButton > .gbAction:hover, 
+.gravityButton > .gbAction:focus-visible {
+    --_fill: var(--color, #fff);
+}
+.gravityButton > .gbAction:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    opacity: 1;
+}
+.gravityButton > .gbAction::before,
+.gravityButton > .gbAction::after{
+    content: none;
+}
+
+.buttonIcon {
+    width: 50%;
+    fill: var(--_fill, #fff);
+    transition: fill 0.3s;
+    display: inline;
 }

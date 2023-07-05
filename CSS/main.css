@@ -1,5 +1,14 @@
 @import url(reset.css);
 
+/* add local font */
+@font-face {
+    font-family: 'Hacky';
+    src: url('fonts/Hacky.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
     background-color: #242429;
     padding: clamp(10px, 2vw, 30px);
@@ -9,7 +18,9 @@ body{
 
 h1{
     margin-inline: 20px;
-    margin-block: 50px
+    margin-block: 50px;
+    font-family: 'Hacky', serif;
+    font-size: clamp(3rem, 10vw, 10rem);
 }
 
 a{
