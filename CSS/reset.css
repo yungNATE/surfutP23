@@ -25,3 +25,7 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  iframe{
+    border: 0;
+  }

@@ -16,3 +16,21 @@ html {
     align-items: center;
     flex-direction: column;
  }
+
+
+ /*Embedded video*/
+ .video-container{
+    z-index: -1;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    filter: blur(30px);
+}
