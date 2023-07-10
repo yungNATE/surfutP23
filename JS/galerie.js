@@ -1,0 +1,1 @@
+// Get all photos from media folder

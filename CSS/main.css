@@ -3,7 +3,7 @@
 /* add local font */
 @font-face {
     font-family: 'Hacky';
-    src: url('fonts/Hacky.ttf') format('truetype');
+    src: url('fonts/Hacky.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
