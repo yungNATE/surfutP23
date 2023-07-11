@@ -1,2 +1,12 @@
 @import url(main.css);
 
+.photo-gallery{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 5px;
+}
+
+.photo-gallery img{
+    max-width: 100px;
+}
