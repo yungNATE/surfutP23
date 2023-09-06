@@ -11,7 +11,7 @@
 
 body{
     background-color: #242429;
-    padding: clamp(10px, 2vw, 30px);
+    padding: clamp(10px, 2vw, 15px);
     color: white;
     font: 1.2rem 'Roboto', sans-serif;
 }

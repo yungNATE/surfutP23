@@ -11,10 +11,43 @@
     max-width: 100px;
 }
 
-iframe{
-    background-color: red;
-    border-radius: 20px;
+body {
+    background: url("./img/pexels-pixabay-390051.jpg") right bottom/cover no-repeat fixed;
+    /* box-shadow: inset 0px 280px 221px -10px #00000020; */
+}
 
+h1{
+    color: black;
+    margin-bottom: 100px;
+}
+
+.folders > .folder{
+    color: black;
+    background-color: #ffffff88;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-inline: auto;
+    margin-bottom: 30px ;
+    max-width: 1000px;
+
+}
+
+.folders > .folder > .folder:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.folder h2,
+.folder h3 {
+    margin-bottom: 15px;
+}
+.folder h3 {
+    margin-left: 10px;
+}
+
+iframe{
+    background-color: #ffffff6d;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
     width: 100%;
     height: 300px;
 }

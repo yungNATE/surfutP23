@@ -23,7 +23,8 @@ async function fetchData(url) {
     }
 }
 
-fetchData(webAppUrl).then((data) => { buildGallery(data) });
+let foldersDiv = document.querySelector(".folders");
+fetchData(webAppUrl).then((data) => { buildGallery(data, 2, foldersDiv) });
 
 function buildGallery(data, level = 2, parent = null) {
   for (const key in data) {
