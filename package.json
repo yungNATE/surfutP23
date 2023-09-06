@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "fslightbox": "^3.4.1",
+    "panolens": "^0.12.1",
     "youtube-background": "^1.0.14"
   }
 }
